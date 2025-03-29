@@ -71,12 +71,12 @@ class MainViewController: UITableViewController{
         print("getAccessToken begin!!!");
         
         
-//        curl -d "client_id=my_client_id&client_secret=my_client_secret&grant_type=client_credentials&scope=member.info.public" -X POST "http://my_client_id:my_client_secret@api.pizzastudio.app/oauth2-server/oauth/token"
-        let oauthUrl = URL(string : "https://my_client_id:my_client_secret@api.pizzastudio.app/oauth2-server/oauth/token")!
+//        curl -d "client_id=********&client_secret=********&grant_type=client_credentials&scope=member.info.public" -X POST "http://********:********@api.pizzastudio.app/oauth2-server/oauth/token"
+        let oauthUrl = URL(string : "https://********:********@api.pizzastudio.app/oauth2-server/oauth/token")!
         var request = URLRequest(url:oauthUrl)
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField:"Content-Type")
         request.httpMethod = "POST"
-        let param = "client_id=my_client_id&client_secret=my_client_secret&grant_type=client_credentials&scope=member.info.public"
+        let param = "client_id=********&client_secret=********&grant_type=client_credentials&scope=member.info.public"
         request.httpBody = param.data(using: .utf8)
 
 //        print(request)
