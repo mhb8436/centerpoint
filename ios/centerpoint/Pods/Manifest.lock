@@ -1,0 +1,103 @@
+PODS:
+  - ALRT (1.3.4)
+  - Floaty (4.2.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - Google-Mobile-Ads-SDK (7.59.0):
+    - GoogleAppMeasurement (~> 6.0)
+  - GoogleAppMeasurement (6.5.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 1.30905.0)
+  - GoogleMaps (3.8.0):
+    - GoogleMaps/Maps (= 3.8.0)
+  - GoogleMaps/Base (3.8.0)
+  - GoogleMaps/Maps (3.8.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.8.0):
+    - GoogleMaps/Base (= 3.8.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.6.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.6.0):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (6.6.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.6.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.6.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.6.0)"
+  - GoogleUtilities/Reachability (6.6.0):
+    - GoogleUtilities/Logger
+  - nanopb (1.30905.0):
+    - nanopb/decode (= 1.30905.0)
+    - nanopb/encode (= 1.30905.0)
+  - nanopb/decode (1.30905.0)
+  - nanopb/encode (1.30905.0)
+  - Neon (0.4.0)
+  - OAuthSwift (2.0.0)
+  - PromisesObjC (1.2.8)
+  - SDWebImage (5.7.2):
+    - SDWebImage/Core (= 5.7.2)
+  - SDWebImage/Core (5.7.2)
+  - SearchTextField (1.2.4)
+  - SmartWKWebView (0.1.2)
+
+DEPENDENCIES:
+  - ALRT (~> 1.3.4)
+  - Floaty
+  - FMDB
+  - Google-Mobile-Ads-SDK
+  - GoogleMaps
+  - GooglePlaces
+  - Neon
+  - OAuthSwift (~> 2.0.0)
+  - SDWebImage (~> 5.0)
+  - SearchTextField
+  - SmartWKWebView
+
+SPEC REPOS:
+  trunk:
+    - ALRT
+    - Floaty
+    - FMDB
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleMaps
+    - GooglePlaces
+    - GoogleUtilities
+    - nanopb
+    - Neon
+    - OAuthSwift
+    - PromisesObjC
+    - SDWebImage
+    - SearchTextField
+    - SmartWKWebView
+
+SPEC CHECKSUMS:
+  ALRT: b86f7a76e115cef2e45c955e7ed18dbc60b36748
+  Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Google-Mobile-Ads-SDK: 118217ac8b80e28aabe0c00aedab1cd885857776
+  GoogleAppMeasurement: 4c644d86835d827bab30ab6aabb9ecaf1f500735
+  GoogleMaps: 7c8d66d70e4e8c300f43a7219d8fdaad7b325a9a
+  GooglePlaces: d5f70c3e9e427964fdeca1301a665d276ccd8754
+  GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
+  nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
+  Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
+  OAuthSwift: 6805456763cf1c7ae0c16765257ed430b7aacae7
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  SDWebImage: d9ea4959d99c52276dfada481987018fcaea3d58
+  SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
+  SmartWKWebView: c1e14f813759cd4ae60e743bf6ba313c4e9857bd
+
+PODFILE CHECKSUM: 5ab06f3fd51149a4e7d87e40af10b5cb25ece2f4
+
+COCOAPODS: 1.9.1

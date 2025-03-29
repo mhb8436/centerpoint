@@ -1,0 +1,23 @@
+{
+	"aws":{
+		"aws_access_key_id":"AKIAJVLINIEYLFSDN4KA",
+		"aws_secret_access_key":"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",
+		"bucket_name":"tv1h",
+		"region":"s3.ap-northeast-2.amazonaws.com"
+	},
+	"general":{
+		"data_dir":"/Users/mhb8436/Myworks/log",
+		"data_period":10,
+		"root_dir":"/Users/mhb8436/Myworks/statcc/server/bin/"
+	},
+	"redis":{
+		"host":"127.0.0.1",
+		"port":6379
+	},
+	"postgres":{
+		"host":"127.0.0.1",
+		"database":"centerpoint",
+		"user":"",
+		"password":""
+	}
+}

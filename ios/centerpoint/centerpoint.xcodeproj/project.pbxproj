@@ -1,0 +1,855 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08205422241C8A04000E348A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08205421241C8A04000E348A /* MainViewController.swift */; };
+		08205424241C8BD8000E348A /* MeetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08205423241C8BD8000E348A /* MeetTableViewCell.swift */; };
+		08205428241C9D2C000E348A /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08205427241C9D2C000E348A /* AppStore.swift */; };
+		0820542A241C9D4E000E348A /* Meet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08205429241C9D4E000E348A /* Meet.swift */; };
+		0820542C241C9E63000E348A /* MeetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0820542B241C9E63000E348A /* MeetStore.swift */; };
+		0820542E241C9F02000E348A /* MeetCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0820542D241C9F02000E348A /* MeetCache.swift */; };
+		08205430241CA671000E348A /* DAOFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0820542F241CA671000E348A /* DAOFactory.swift */; };
+		08205432241CA7A3000E348A /* MeetDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08205431241CA7A3000E348A /* MeetDAO.swift */; };
+		08205434241DB8E8000E348A /* AddMeetDialogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08205433241DB8E8000E348A /* AddMeetDialogController.swift */; };
+		08205436241E071F000E348A /* dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 08205435241E071F000E348A /* dot.png */; };
+		08205438241E3664000E348A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08205437241E3664000E348A /* MapViewController.swift */; };
+		0820543A241E4497000E348A /* marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 08205439241E4497000E348A /* marker.png */; };
+		0820543C241E46E4000E348A /* calender.png in Resources */ = {isa = PBXBuildFile; fileRef = 0820543B241E46E4000E348A /* calender.png */; };
+		0820543E241E4764000E348A /* dot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0820543D241E4763000E348A /* dot1.png */; };
+		08205442241E49E1000E348A /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08205441241E49E1000E348A /* Participant.swift */; };
+		08205444241E4B2C000E348A /* ParticipantStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08205443241E4B2C000E348A /* ParticipantStore.swift */; };
+		08205446241E4B42000E348A /* ParticipantCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08205445241E4B42000E348A /* ParticipantCache.swift */; };
+		08205448241E4B51000E348A /* ParticipantDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08205447241E4B51000E348A /* ParticipantDAO.swift */; };
+		0858E3CF245BFD7B00E9C4D3 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 0858E3CE245BFD7B00E9C4D3 /* close.png */; };
+		08598E03244C3A5900582517 /* RestrauntViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08598E02244C3A5900582517 /* RestrauntViewController.swift */; };
+		08598E05244C3C3E00582517 /* RestrauntTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08598E04244C3C3E00582517 /* RestrauntTableViewCell.swift */; };
+		087CC4462420AC910027E6C5 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CC4452420AC910027E6C5 /* FriendViewController.swift */; };
+		087CC4502424CE1D0027E6C5 /* TransportSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CC44F2424CE1D0027E6C5 /* TransportSelectCell.swift */; };
+		087CC4522426EE2C0027E6C5 /* SearchPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CC4512426EE2C0027E6C5 /* SearchPlace.swift */; };
+		08C1B669247E485400517E41 /* FriendViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1B668247E485400517E41 /* FriendViewController2.swift */; };
+		08C34FB824386CE900B2FB29 /* bubble_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C34FB324386CE800B2FB29 /* bubble_pink.png */; };
+		08C34FB924386CE900B2FB29 /* bubble_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C34FB424386CE900B2FB29 /* bubble_red.png */; };
+		08C34FBA24386CE900B2FB29 /* bubble_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C34FB524386CE900B2FB29 /* bubble_blue.png */; };
+		08C34FBB24386CE900B2FB29 /* bubble_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C34FB624386CE900B2FB29 /* bubble_green.png */; };
+		08C34FBC24386CE900B2FB29 /* bubble_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C34FB724386CE900B2FB29 /* bubble_orange.png */; };
+		08C34FBE243879EC00B2FB29 /* route.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C34FBD243879EC00B2FB29 /* route.png */; };
+		08DD43CB245BED9E0085AC1E /* RestrauntWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD43CA245BED9E0085AC1E /* RestrauntWebView.swift */; };
+		08E670AC241340D000F5092F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E670AB241340D000F5092F /* AppDelegate.swift */; };
+		08E670B2241340D200F5092F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E670B1241340D200F5092F /* Assets.xcassets */; };
+		08E670B5241340D200F5092F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E670B4241340D200F5092F /* Preview Assets.xcassets */; };
+		08E670B8241340D200F5092F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E670B6241340D200F5092F /* LaunchScreen.storyboard */; };
+		08E670C3241340D200F5092F /* centerpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E670C2241340D200F5092F /* centerpointTests.swift */; };
+		08E670CE241340D200F5092F /* centerpointUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E670CD241340D200F5092F /* centerpointUITests.swift */; };
+		08E8E2DD243C547800C8A1AA /* PointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E8E2DC243C547800C8A1AA /* PointModel.swift */; };
+		08E8E2DF243C54E600C8A1AA /* TraceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E8E2DE243C54E600C8A1AA /* TraceModel.swift */; };
+		08E8E2E1243C555B00C8A1AA /* ReommendPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E8E2E0243C555B00C8A1AA /* ReommendPlaceModel.swift */; };
+		08E8E2E3243C567400C8A1AA /* TraceRouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E8E2E2243C567400C8A1AA /* TraceRouteModel.swift */; };
+		5608B15BF85A6F237136F4AD /* Pods_centerpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30F1695D7B5EB0524B71A5 /* Pods_centerpoint.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08E670BF241340D200F5092F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E670A0241340D000F5092F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08E670A7241340D000F5092F;
+			remoteInfo = centerpoint;
+		};
+		08E670CA241340D200F5092F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E670A0241340D000F5092F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08E670A7241340D000F5092F;
+			remoteInfo = centerpoint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08205421241C8A04000E348A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		08205423241C8BD8000E348A /* MeetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetTableViewCell.swift; sourceTree = "<group>"; };
+		08205427241C9D2C000E348A /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		08205429241C9D4E000E348A /* Meet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meet.swift; sourceTree = "<group>"; };
+		0820542B241C9E63000E348A /* MeetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetStore.swift; sourceTree = "<group>"; };
+		0820542D241C9F02000E348A /* MeetCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetCache.swift; sourceTree = "<group>"; };
+		0820542F241CA671000E348A /* DAOFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOFactory.swift; sourceTree = "<group>"; };
+		08205431241CA7A3000E348A /* MeetDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetDAO.swift; sourceTree = "<group>"; };
+		08205433241DB8E8000E348A /* AddMeetDialogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeetDialogController.swift; sourceTree = "<group>"; };
+		08205435241E071F000E348A /* dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot.png; sourceTree = "<group>"; };
+		08205437241E3664000E348A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		08205439241E4497000E348A /* marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marker.png; sourceTree = "<group>"; };
+		0820543B241E46E4000E348A /* calender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calender.png; sourceTree = "<group>"; };
+		0820543D241E4763000E348A /* dot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot1.png; sourceTree = "<group>"; };
+		08205441241E49E1000E348A /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
+		08205443241E4B2C000E348A /* ParticipantStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantStore.swift; sourceTree = "<group>"; };
+		08205445241E4B42000E348A /* ParticipantCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantCache.swift; sourceTree = "<group>"; };
+		08205447241E4B51000E348A /* ParticipantDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantDAO.swift; sourceTree = "<group>"; };
+		0858E3CE245BFD7B00E9C4D3 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		08598E02244C3A5900582517 /* RestrauntViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrauntViewController.swift; sourceTree = "<group>"; };
+		08598E04244C3C3E00582517 /* RestrauntTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrauntTableViewCell.swift; sourceTree = "<group>"; };
+		087CC4452420AC910027E6C5 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		087CC44F2424CE1D0027E6C5 /* TransportSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportSelectCell.swift; sourceTree = "<group>"; };
+		087CC4512426EE2C0027E6C5 /* SearchPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlace.swift; sourceTree = "<group>"; };
+		08C1B668247E485400517E41 /* FriendViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController2.swift; sourceTree = "<group>"; };
+		08C34FB324386CE800B2FB29 /* bubble_pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_pink.png; sourceTree = "<group>"; };
+		08C34FB424386CE900B2FB29 /* bubble_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_red.png; sourceTree = "<group>"; };
+		08C34FB524386CE900B2FB29 /* bubble_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_blue.png; sourceTree = "<group>"; };
+		08C34FB624386CE900B2FB29 /* bubble_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_green.png; sourceTree = "<group>"; };
+		08C34FB724386CE900B2FB29 /* bubble_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_orange.png; sourceTree = "<group>"; };
+		08C34FBD243879EC00B2FB29 /* route.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = route.png; sourceTree = "<group>"; };
+		08DD43CA245BED9E0085AC1E /* RestrauntWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrauntWebView.swift; sourceTree = "<group>"; };
+		08E670A8241340D000F5092F /* centerpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = centerpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E670AB241340D000F5092F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08E670B1241340D200F5092F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08E670B4241340D200F5092F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08E670B7241340D200F5092F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08E670B9241340D200F5092F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E670BE241340D200F5092F /* centerpointTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = centerpointTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E670C2241340D200F5092F /* centerpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = centerpointTests.swift; sourceTree = "<group>"; };
+		08E670C4241340D200F5092F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E670C9241340D200F5092F /* centerpointUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = centerpointUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E670CD241340D200F5092F /* centerpointUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = centerpointUITests.swift; sourceTree = "<group>"; };
+		08E670CF241340D200F5092F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E8E2DC243C547800C8A1AA /* PointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointModel.swift; sourceTree = "<group>"; };
+		08E8E2DE243C54E600C8A1AA /* TraceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceModel.swift; sourceTree = "<group>"; };
+		08E8E2E0243C555B00C8A1AA /* ReommendPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReommendPlaceModel.swift; sourceTree = "<group>"; };
+		08E8E2E2243C567400C8A1AA /* TraceRouteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceRouteModel.swift; sourceTree = "<group>"; };
+		39DF32481C5A7B111D383B78 /* Pods-centerpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-centerpoint.debug.xcconfig"; path = "Target Support Files/Pods-centerpoint/Pods-centerpoint.debug.xcconfig"; sourceTree = "<group>"; };
+		AC1C3BEF809A41B5FA8A9EF2 /* Pods-centerpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-centerpoint.release.xcconfig"; path = "Target Support Files/Pods-centerpoint/Pods-centerpoint.release.xcconfig"; sourceTree = "<group>"; };
+		CE30F1695D7B5EB0524B71A5 /* Pods_centerpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_centerpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08E670A5241340D000F5092F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5608B15BF85A6F237136F4AD /* Pods_centerpoint.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E670BB241340D200F5092F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E670C6241340D200F5092F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08205425241C9D05000E348A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				08205440241E49AC000E348A /* Participant */,
+				08205427241C9D2C000E348A /* AppStore.swift */,
+				08205426241C9D0F000E348A /* Meet */,
+				0820542F241CA671000E348A /* DAOFactory.swift */,
+				087CC4512426EE2C0027E6C5 /* SearchPlace.swift */,
+				08E8E2DC243C547800C8A1AA /* PointModel.swift */,
+				08E8E2DE243C54E600C8A1AA /* TraceModel.swift */,
+				08E8E2E0243C555B00C8A1AA /* ReommendPlaceModel.swift */,
+				08E8E2E2243C567400C8A1AA /* TraceRouteModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		08205426241C9D0F000E348A /* Meet */ = {
+			isa = PBXGroup;
+			children = (
+				08205429241C9D4E000E348A /* Meet.swift */,
+				0820542B241C9E63000E348A /* MeetStore.swift */,
+				0820542D241C9F02000E348A /* MeetCache.swift */,
+				08205431241CA7A3000E348A /* MeetDAO.swift */,
+			);
+			path = Meet;
+			sourceTree = "<group>";
+		};
+		0820543F241E4843000E348A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0858E3CE245BFD7B00E9C4D3 /* close.png */,
+				08C34FBD243879EC00B2FB29 /* route.png */,
+				08C34FB524386CE900B2FB29 /* bubble_blue.png */,
+				08C34FB624386CE900B2FB29 /* bubble_green.png */,
+				08C34FB724386CE900B2FB29 /* bubble_orange.png */,
+				08C34FB324386CE800B2FB29 /* bubble_pink.png */,
+				08C34FB424386CE900B2FB29 /* bubble_red.png */,
+				0820543D241E4763000E348A /* dot1.png */,
+				0820543B241E46E4000E348A /* calender.png */,
+				08205439241E4497000E348A /* marker.png */,
+				08205435241E071F000E348A /* dot.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		08205440241E49AC000E348A /* Participant */ = {
+			isa = PBXGroup;
+			children = (
+				08205441241E49E1000E348A /* Participant.swift */,
+				08205443241E4B2C000E348A /* ParticipantStore.swift */,
+				08205445241E4B42000E348A /* ParticipantCache.swift */,
+				08205447241E4B51000E348A /* ParticipantDAO.swift */,
+			);
+			path = Participant;
+			sourceTree = "<group>";
+		};
+		08E6709F241340D000F5092F = {
+			isa = PBXGroup;
+			children = (
+				08E670AA241340D000F5092F /* centerpoint */,
+				08E670C1241340D200F5092F /* centerpointTests */,
+				08E670CC241340D200F5092F /* centerpointUITests */,
+				08E670A9241340D000F5092F /* Products */,
+				104842486CE5DC2589A940F7 /* Pods */,
+				10065DE42259379643C2CD1C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		08E670A9241340D000F5092F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08E670A8241340D000F5092F /* centerpoint.app */,
+				08E670BE241340D200F5092F /* centerpointTests.xctest */,
+				08E670C9241340D200F5092F /* centerpointUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08E670AA241340D000F5092F /* centerpoint */ = {
+			isa = PBXGroup;
+			children = (
+				0820543F241E4843000E348A /* images */,
+				08205425241C9D05000E348A /* Models */,
+				08E670AB241340D000F5092F /* AppDelegate.swift */,
+				08E670B1241340D200F5092F /* Assets.xcassets */,
+				08E670B6241340D200F5092F /* LaunchScreen.storyboard */,
+				08E670B9241340D200F5092F /* Info.plist */,
+				08E670B3241340D200F5092F /* Preview Content */,
+				08205421241C8A04000E348A /* MainViewController.swift */,
+				08205423241C8BD8000E348A /* MeetTableViewCell.swift */,
+				08205433241DB8E8000E348A /* AddMeetDialogController.swift */,
+				08205437241E3664000E348A /* MapViewController.swift */,
+				087CC4452420AC910027E6C5 /* FriendViewController.swift */,
+				087CC44F2424CE1D0027E6C5 /* TransportSelectCell.swift */,
+				08598E02244C3A5900582517 /* RestrauntViewController.swift */,
+				08598E04244C3C3E00582517 /* RestrauntTableViewCell.swift */,
+				08DD43CA245BED9E0085AC1E /* RestrauntWebView.swift */,
+				08C1B668247E485400517E41 /* FriendViewController2.swift */,
+			);
+			path = centerpoint;
+			sourceTree = "<group>";
+		};
+		08E670B3241340D200F5092F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				08E670B4241340D200F5092F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08E670C1241340D200F5092F /* centerpointTests */ = {
+			isa = PBXGroup;
+			children = (
+				08E670C2241340D200F5092F /* centerpointTests.swift */,
+				08E670C4241340D200F5092F /* Info.plist */,
+			);
+			path = centerpointTests;
+			sourceTree = "<group>";
+		};
+		08E670CC241340D200F5092F /* centerpointUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08E670CD241340D200F5092F /* centerpointUITests.swift */,
+				08E670CF241340D200F5092F /* Info.plist */,
+			);
+			path = centerpointUITests;
+			sourceTree = "<group>";
+		};
+		10065DE42259379643C2CD1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE30F1695D7B5EB0524B71A5 /* Pods_centerpoint.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		104842486CE5DC2589A940F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39DF32481C5A7B111D383B78 /* Pods-centerpoint.debug.xcconfig */,
+				AC1C3BEF809A41B5FA8A9EF2 /* Pods-centerpoint.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08E670A7241340D000F5092F /* centerpoint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E670D2241340D200F5092F /* Build configuration list for PBXNativeTarget "centerpoint" */;
+			buildPhases = (
+				CBD58CACC24B38EEAD605967 /* [CP] Check Pods Manifest.lock */,
+				08E670A4241340D000F5092F /* Sources */,
+				08E670A5241340D000F5092F /* Frameworks */,
+				08E670A6241340D000F5092F /* Resources */,
+				35C2A010541A9DA28CFB7396 /* [CP] Embed Pods Frameworks */,
+				B8D55D65B5580170EA586FE8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = centerpoint;
+			productName = centerpoint;
+			productReference = 08E670A8241340D000F5092F /* centerpoint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08E670BD241340D200F5092F /* centerpointTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E670D5241340D200F5092F /* Build configuration list for PBXNativeTarget "centerpointTests" */;
+			buildPhases = (
+				08E670BA241340D200F5092F /* Sources */,
+				08E670BB241340D200F5092F /* Frameworks */,
+				08E670BC241340D200F5092F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08E670C0241340D200F5092F /* PBXTargetDependency */,
+			);
+			name = centerpointTests;
+			productName = centerpointTests;
+			productReference = 08E670BE241340D200F5092F /* centerpointTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08E670C8241340D200F5092F /* centerpointUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E670D8241340D200F5092F /* Build configuration list for PBXNativeTarget "centerpointUITests" */;
+			buildPhases = (
+				08E670C5241340D200F5092F /* Sources */,
+				08E670C6241340D200F5092F /* Frameworks */,
+				08E670C7241340D200F5092F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08E670CB241340D200F5092F /* PBXTargetDependency */,
+			);
+			name = centerpointUITests;
+			productName = centerpointUITests;
+			productReference = 08E670C9241340D200F5092F /* centerpointUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08E670A0241340D000F5092F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = ethan.lee781;
+				TargetAttributes = {
+					08E670A7241340D000F5092F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					08E670BD241340D200F5092F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 08E670A7241340D000F5092F;
+					};
+					08E670C8241340D200F5092F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 08E670A7241340D000F5092F;
+					};
+				};
+			};
+			buildConfigurationList = 08E670A3241340D000F5092F /* Build configuration list for PBXProject "centerpoint" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08E6709F241340D000F5092F;
+			productRefGroup = 08E670A9241340D000F5092F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08E670A7241340D000F5092F /* centerpoint */,
+				08E670BD241340D200F5092F /* centerpointTests */,
+				08E670C8241340D200F5092F /* centerpointUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08E670A6241340D000F5092F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E670B8241340D200F5092F /* LaunchScreen.storyboard in Resources */,
+				0820543C241E46E4000E348A /* calender.png in Resources */,
+				0820543A241E4497000E348A /* marker.png in Resources */,
+				08C34FBC24386CE900B2FB29 /* bubble_orange.png in Resources */,
+				0858E3CF245BFD7B00E9C4D3 /* close.png in Resources */,
+				08205436241E071F000E348A /* dot.png in Resources */,
+				08E670B5241340D200F5092F /* Preview Assets.xcassets in Resources */,
+				08C34FB924386CE900B2FB29 /* bubble_red.png in Resources */,
+				08E670B2241340D200F5092F /* Assets.xcassets in Resources */,
+				08C34FBE243879EC00B2FB29 /* route.png in Resources */,
+				08C34FBA24386CE900B2FB29 /* bubble_blue.png in Resources */,
+				0820543E241E4764000E348A /* dot1.png in Resources */,
+				08C34FBB24386CE900B2FB29 /* bubble_green.png in Resources */,
+				08C34FB824386CE900B2FB29 /* bubble_pink.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E670BC241340D200F5092F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E670C7241340D200F5092F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35C2A010541A9DA28CFB7396 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-centerpoint/Pods-centerpoint-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-centerpoint/Pods-centerpoint-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-centerpoint/Pods-centerpoint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8D55D65B5580170EA586FE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-centerpoint/Pods-centerpoint-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-centerpoint/Pods-centerpoint-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-centerpoint/Pods-centerpoint-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBD58CACC24B38EEAD605967 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-centerpoint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08E670A4241340D000F5092F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E8E2E1243C555B00C8A1AA /* ReommendPlaceModel.swift in Sources */,
+				08205438241E3664000E348A /* MapViewController.swift in Sources */,
+				08598E05244C3C3E00582517 /* RestrauntTableViewCell.swift in Sources */,
+				08205434241DB8E8000E348A /* AddMeetDialogController.swift in Sources */,
+				0820542A241C9D4E000E348A /* Meet.swift in Sources */,
+				08E8E2DF243C54E600C8A1AA /* TraceModel.swift in Sources */,
+				08205432241CA7A3000E348A /* MeetDAO.swift in Sources */,
+				08E670AC241340D000F5092F /* AppDelegate.swift in Sources */,
+				08E8E2DD243C547800C8A1AA /* PointModel.swift in Sources */,
+				087CC4522426EE2C0027E6C5 /* SearchPlace.swift in Sources */,
+				08205448241E4B51000E348A /* ParticipantDAO.swift in Sources */,
+				08DD43CB245BED9E0085AC1E /* RestrauntWebView.swift in Sources */,
+				087CC4502424CE1D0027E6C5 /* TransportSelectCell.swift in Sources */,
+				0820542C241C9E63000E348A /* MeetStore.swift in Sources */,
+				08205444241E4B2C000E348A /* ParticipantStore.swift in Sources */,
+				08205424241C8BD8000E348A /* MeetTableViewCell.swift in Sources */,
+				08205446241E4B42000E348A /* ParticipantCache.swift in Sources */,
+				08E8E2E3243C567400C8A1AA /* TraceRouteModel.swift in Sources */,
+				0820542E241C9F02000E348A /* MeetCache.swift in Sources */,
+				08205428241C9D2C000E348A /* AppStore.swift in Sources */,
+				087CC4462420AC910027E6C5 /* FriendViewController.swift in Sources */,
+				08C1B669247E485400517E41 /* FriendViewController2.swift in Sources */,
+				08598E03244C3A5900582517 /* RestrauntViewController.swift in Sources */,
+				08205430241CA671000E348A /* DAOFactory.swift in Sources */,
+				08205422241C8A04000E348A /* MainViewController.swift in Sources */,
+				08205442241E49E1000E348A /* Participant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E670BA241340D200F5092F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E670C3241340D200F5092F /* centerpointTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E670C5241340D200F5092F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E670CE241340D200F5092F /* centerpointUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08E670C0241340D200F5092F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08E670A7241340D000F5092F /* centerpoint */;
+			targetProxy = 08E670BF241340D200F5092F /* PBXContainerItemProxy */;
+		};
+		08E670CB241340D200F5092F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08E670A7241340D000F5092F /* centerpoint */;
+			targetProxy = 08E670CA241340D200F5092F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08E670B6241340D200F5092F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08E670B7241340D200F5092F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08E670D0241340D200F5092F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08E670D1241340D200F5092F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08E670D3241340D200F5092F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39DF32481C5A7B111D383B78 /* Pods-centerpoint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"centerpoint/Preview Content\"";
+				DEVELOPMENT_TEAM = U6V879X9UD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = centerpoint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pizzastudio.centerpoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08E670D4241340D200F5092F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC1C3BEF809A41B5FA8A9EF2 /* Pods-centerpoint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"centerpoint/Preview Content\"";
+				DEVELOPMENT_TEAM = U6V879X9UD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = centerpoint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pizzastudio.centerpoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08E670D6241340D200F5092F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = centerpointTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pizzastudio.centerpointTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/centerpoint.app/centerpoint";
+			};
+			name = Debug;
+		};
+		08E670D7241340D200F5092F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = centerpointTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pizzastudio.centerpointTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/centerpoint.app/centerpoint";
+			};
+			name = Release;
+		};
+		08E670D9241340D200F5092F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = centerpointUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pizzastudio.centerpointUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = centerpoint;
+			};
+			name = Debug;
+		};
+		08E670DA241340D200F5092F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = centerpointUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pizzastudio.centerpointUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = centerpoint;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08E670A3241340D000F5092F /* Build configuration list for PBXProject "centerpoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E670D0241340D200F5092F /* Debug */,
+				08E670D1241340D200F5092F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08E670D2241340D200F5092F /* Build configuration list for PBXNativeTarget "centerpoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E670D3241340D200F5092F /* Debug */,
+				08E670D4241340D200F5092F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08E670D5241340D200F5092F /* Build configuration list for PBXNativeTarget "centerpointTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E670D6241340D200F5092F /* Debug */,
+				08E670D7241340D200F5092F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08E670D8241340D200F5092F /* Build configuration list for PBXNativeTarget "centerpointUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E670D9241340D200F5092F /* Debug */,
+				08E670DA241340D200F5092F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08E670A0241340D000F5092F /* Project object */;
+}

@@ -1,0 +1,16 @@
+platform :ios, '10.0'
+use_frameworks!
+
+target 'centerpoint' do
+  pod 'FMDB'
+  pod 'ALRT', '~> 1.3.4'
+  pod 'Floaty'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'Neon'
+  pod "SearchTextField"
+  pod 'OAuthSwift', '~> 2.0.0'
+  pod 'SDWebImage', '~> 5.0'
+  pod 'SmartWKWebView'
+  pod 'Google-Mobile-Ads-SDK'
+end

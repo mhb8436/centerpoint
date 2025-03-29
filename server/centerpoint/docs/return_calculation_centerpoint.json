@@ -1,0 +1,19 @@
+{
+  "message": "ok",
+  "result": [
+    {
+      "name": "양재역",
+      "point": {
+        "lat": 37, "lng": 126
+      },
+      "meet_place": [
+        {
+          "name": "소불고기",
+          "point": {"lat": 37, "lng": 126},
+          ""
+        }
+      ]
+    }
+
+  ]
+}
