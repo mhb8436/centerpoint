@@ -28,10 +28,10 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyARKt4zv8C9OHEPrOxU94scpX64eoQ0iPY" />
+            android:value="********" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-8638613247413657~9900771440"/>
+            android:value="********"/>
 
         <activity android:name=".MainActivity">
             <intent-filter>
